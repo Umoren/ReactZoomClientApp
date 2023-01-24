@@ -1,0 +1,26 @@
+{
+  "name": "zoomapps-advancedsample-react",
+  "version": "1.0.0",
+  "description": "Advanced Sample covers most complex scenarios that might be needed in apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd frontend && concurrently \"react-app-rewired start | cat\" \"cd ../backend && nodemon server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoom/zoomapps-advancedsample-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zoom/zoomapps-advancedsample-react/issues"
+  },
+  "homepage": "https://github.com/zoom/zoomapps-advancedsample-react#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20",
+    "react-app-rewired": "^2.2.1"
+  }
+}

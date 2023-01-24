@@ -5,13 +5,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createHashHistory } from "history";
+import { AppProvider } from "./components/context";
 
 const history = createHashHistory();
 
 ReactDOM.render(
   <React.StrictMode>
     <Router history={history}>
-      <App />
+      <AppProvider>
+        <App />
+      </AppProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
